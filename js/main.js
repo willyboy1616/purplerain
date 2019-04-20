@@ -24,7 +24,7 @@ function createDroplet(){
     var width = window.innerWidth;
     drop.src="assets/img/raindrop.svg";
     drop.className = "drop";
-    var pos = getRandomInt(0, width);
+    var pos = getRandomInt(0, width)-25;
     drop.style.left = pos+"px";
     main.sky.appendChild(drop);
     deleteDroppedDrops();
@@ -32,6 +32,6 @@ function createDroplet(){
 
 function init(){
     main.sky = document.getElementById("main");
-    main.timerDrop = setInterval(createDroplet, 100);
+    main.timerDrop = setInterval(createDroplet, 150);
 }
 window.addEventListener("load", init, false);

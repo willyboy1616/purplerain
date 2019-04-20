@@ -14,9 +14,7 @@ body{
     max-width: 50px;
     animation-name: drop;
     animation-duration: 4s;
-    animation-delay: 0ms;
     animation-fill-mode: both;
-    z-index: -1000;
 }
 
 .outer {
@@ -26,6 +24,7 @@ body{
     left: 0;
     height: 100%;
     width: 100%;
+    overflow: hidden;
 }
 
 .middle {
@@ -33,6 +32,11 @@ body{
     vertical-align: middle;
     background: url('../assets/img/cloud.svg') no-repeat;
     background-position: center;
+    animation-name: slideDown;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-delay: 1s;
+    z-index: 1000;
     
 }
 
@@ -40,8 +44,25 @@ body{
     margin-left: auto;
     margin-right: auto;
     width: 400px;
-    z-index: 1000;
-    /*whatever width you want*/
+    animation-name: slideDown;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    animation-delay: 2s;
+}
+footer{
+    position: absolute;
+    bottom:  0;
+    float: right;
+}
+footer a img{
+    max-width: 32px;
+    max-height: 32px;
+    width: auto;
+    height: auto;
+    animation-name: slideDown;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    animation-delay: 2s;
 }
 
 @keyframes drop{
@@ -52,5 +73,13 @@ body{
     to{
         transform: translateY(1000px);
         opacity: 0;
+    }
+}
+@keyframes slideDown{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
     }
 }
