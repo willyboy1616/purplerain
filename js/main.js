@@ -24,7 +24,7 @@ function createDroplet(){
     var width = window.innerWidth;
     drop.src="assets/img/raindrop.svg";
     drop.className = "drop";
-    var pos = getRandomInt(0, width)-50;
+    var pos = getRandomInt(0, width);
     drop.style.left = pos+"px";
     main.sky.appendChild(drop);
     deleteDroppedDrops();

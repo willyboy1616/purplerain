@@ -1,0 +1,16 @@
+/* font-family: 'Oxygen', sans-serif;
+font-family: 'Indie Flower', cursive;
+font-family: 'Asap', sans-serif;
+font-family: 'Exo', sans-serif;
+font-family: 'PT Sans Caption', sans-serif; */
+
+
+h1{
+    text-align: center;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 2em;
+}
+#main p {
+    text-align: center;
+    font-family: 'Asap', sans-serif;
+}
